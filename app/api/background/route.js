@@ -1,8 +1,9 @@
-export default async (req, res) => {
+export default async function handler(req, res) {
     console.log("does this work?");
   };
-  
-  export const config = {
+
+  handler.config = {
     type: "experimental-background",
   };
   
+  module.exports = handler;
